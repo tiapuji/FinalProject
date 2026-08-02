@@ -31,9 +31,9 @@ jobs:
          chrome-version: latest  # Ganti dengan 'stable' untuk versi stabil
         # chrome-options: '--headless' (Jika ingin menjalankan Chrome dalam mode headless)
 
-      - name: Build with Gradle
-        run: gradlew.bat build # Make gradlew executable
-             ./gradlew build   # Run the build task before tests
+      #- name: Build with Gradle
+      #  run: .\gradlew.bat build # Make gradlew executable
+      #       .\gradlew build   # Run the build task before tests
 
       - name: Run All Runner
         run: .\gradlew clean test --tests runner.AllRunner # Run tests after the build step
