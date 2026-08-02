@@ -85,15 +85,15 @@ src/test/java/runner
 
 untuk menjalankan semua skenario :
 ```
-.\gradlew clean test
+.\gradlew clean test --tests runner.AllRunner
 ```
 untuk menjalankan skenario api :
 ```
-.\gradlew test --tests runner.ApiRunner
+.\gradlew clean test --tests runner.ApiRunner
 ```
-untuk menjalankan skenario we :
+untuk menjalankan skenario web :
 ```
-.\gradlew test --tests runner.WebRunner
+.\gradlew clean test --tests runner.WebRunner
 ```
 
 ## Report
