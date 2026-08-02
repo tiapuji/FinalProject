@@ -29,13 +29,13 @@ jobs:
         uses: browser-actions/setup-chrome@v1
 
       - name: Run All Runner
-        run: gradlew clean test --tests runner.ApiRunner
+        run: .\gradlew clean test --tests runner.ApiRunner
 
       - name: Run API Runner
-        run: gradlew clean test --tests runner.ApiRunner
+        run: .\gradlew clean test --tests runner.ApiRunner
 
       - name: Run Web Runner
-        run: gradlew clean test --tests runner.ApiRunner
+        run: .\gradlew clean test --tests runner.ApiRunner
 
       - name: Upload Reports
         uses: actions/upload-artifact@v4
